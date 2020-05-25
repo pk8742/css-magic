@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta http-equiv="refresh" content="10"> -->
+	<title>Dripping Liquid Effect</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="border"></div>
+		<div class="border"></div>
+	</div>
+	<svg>
+		<defs>
+			<filter id='goo'>
+				<feGaussianBlur in='SourceGraphic'
+				stdDeviation='10'/>
+				<feColorMatrix in='name' mode='matrix'
+				   values='1 0 0 0 0
+				   		   0 1 0 0 0
+				   		   0 0 1 0 0
+				   		   0 0 0 30 -15' />
+				<feBlend in='SourceGraphic' />
+			</filter>
+		</defs>
+	</svg>
+</body>
+</html>

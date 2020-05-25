@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>skew text on hover</title>
+</head>
+<style type="text/css">
+	body{margin: 0;padding: 0;background: #a55eea;}
+	.text{margin: 250px 250px;}
+	.text span{height: 120px;width: 120px;display: block;background: #fff;line-height: 120px;text-align: center;float: left;color: #a0a0a0;font-size: 35px;}
+	.text:hover span:nth-child(odd){transform: skewY(-15deg);box-shadow: 0 60px 12px rgba(0,0,0,.2);}
+	.text:hover span:nth-child(even){transform: skewY(15deg);box-shadow: 0 60px 12px rgba(0,0,0,.2);}
+	.text:hover{transform: rotateX(35deg);}
+</style>
+<body>
+	<div class="text">
+		<span>P</span>
+		<span>R</span>
+		<span>A</span>
+		<span>V</span>
+		<span>E</span>
+		<span>S</span>
+		<span>H</span>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>alert</title>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<button id="click">click me</button>
+<p class="show" style="opacity: 0;">welcome Pravesh!</p>
+<script>
+	$(document).ready(function(){
+		$("#click").click(function(){
+			alert("Pravesh");
+			$("p").css("opacity","1");
+		});
+
+	});
+
+</script>
+</body>
+</html>

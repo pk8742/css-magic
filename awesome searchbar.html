@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>awesome searchbar</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <style media="screen">
+    *{margin: 0;padding: 0;}
+    body{background: #e84118;}
+    .searchbar{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background: #2f3640;height: 40px;border-radius: 40px;padding: 10px;}
+    .search-btn{color: #e84118;float: right;height: 40px;width: 40px;border-radius: 50%;background: #2f3640;display: flex;justify-content: center;align-items: center;transition: 0.4s}
+    .search-text{border: none;background: none;outline: none;float: left;padding: 0;color: white;font-size: 16px;line-height: 40px;width: 0px;transition: 0.4s}
+    .searchbar:hover > .search-text{width: 240px;padding: 0 6px;}
+    .searchbar:hover > .search-btn{background: white;}
+  </style>
+  </head>
+  <body>
+    <form class="" action="" method="post">
+
+    <div class="searchbar">
+
+        <input class="search-text" type="text" name="" placeholder="Enter keyword to search">
+        <button type="submit" name="submit" class="search-btn">
+          <i class="fas fa-search"></i>
+      </button>
+
+    </div><!-- end of searchbar-->
+
+  </form>
+  </body>
+</html>

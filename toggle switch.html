@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Toggle switch</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        
+        
+        input[type="checkbox"].toggle-switch{
+            font-size: 20px;appearance: none;-moz-appearance: none;-webkit-appearance: none;width: 45px;height: 25px;border-radius: 28px;background-color: gray;outline: 0;cursor: pointer;transition: 0.09s;background-color: blue;position: relative;
+        }
+        input[type="checkbox"].toggle-switch:checked{background-color: skyblue;}
+        
+        input[type="checkbox"].toggle-switch:after{content: '';width: 25px;height: 25px;background-color: white;border-radius: 20px;position: absolute;transform: scale(0.7);left: 0;transition: 0.09s;}
+        
+        input[type="checkbox"].toggle-switch:checked:after{left:15px;}
+    
+    
+    
+    </style>
+    </head>
+    <body>
+    <input type="checkbox" class="toggle-switch">
+        <input type="checkbox" class="toggle-switch" checked>
+    
+    
+    </body>
+</html>

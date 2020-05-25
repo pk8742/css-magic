@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQ</title>
+	<link rel="stylesheet" type="text/css" href="jq.css">
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".button").click(function(){
+				var value = $(this).attr("data-filter");
+				if(value == "all")
+				{
+					$(".filter").show(1000);
+				}
+				else
+				{
+					$(".filter").not("."+value).hide(1000);
+					$(".filter").filter("."+value).show(1000);
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<ul>
+			<li class="button active" data-filter="all">All</li>
+			<li class="button" data-filter="website">Website</li>
+			<li class="button" data-filter="graphics">Graphics</li>
+			<li class="button" data-filter="psd">PSD</li>
+			<li class="button" data-filter="logo">Logo</li>
+			<li class="button" data-filter="applications">Applications</li>
+			<div style="clear: both;"></div>
+		</ul>
+		
+		<div class="box filter website">Website</div>
+		<div class="box filter graphics">Graphics</div>
+		<div class="box filter psd">PSD</div>
+		<div class="box filter logo">Logo</div>
+		<div class="box filter applications">Applications</div>
+		
+		<div class="box filter website">Website</div>
+		<div class="box filter graphics">Graphics</div>
+		<div class="box filter psd">PSD</div>
+		<div class="box filter logo">Logo</div>
+		<div class="box filter applications">Applications</div>
+		
+		<div class="box filter website">Website</div>
+		<div class="box filter graphics">Graphics</div>
+		<div class="box filter psd">PSD</div>
+		<div class="box filter logo">Logo</div>
+		<div class="box filter applications">Applications</div>
+		<div class="box filter logo">Logo</div>
+	</div>
+</body>
+</html>

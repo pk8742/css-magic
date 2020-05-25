@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="pagePiling.js-master/jquery.pagepiling.css">
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		#pagepiling .section{text-align: center;}
+		#pagepiling .section h2{color: #fff;font-size: 10em;text-shadow: 0 5px 15px rgba(0,0,0,.5);}
+		#pagepiling .section.sec1{background: url(harry-potter.jpg);background-size: cover;}
+		#pagepiling .section.sec2{background: url(avangers.jpg);background-size: cover;}
+		#pagepiling .section.sec3{background: url(doctor-strange.jpg);background-size: cover;}
+		#pagepiling .section.sec4{background: url(iron-man.jpg);background-size: cover;}
+
+		#pp-nav li .active span, .pp-slidesNav .active span
+		{
+			background: #fff;
+		}
+	</style>
+</head>
+<body>
+<div id="pagepiling">
+	<div class="section sec1"><h2>Harry Potter</h2></div>
+	<div class="section sec2"><h2>Avengers</h2></div>
+	<div class="section sec3"><h2>Doctor Strange</h2></div>
+	<div class="section sec4"><h2>Iron Man</h2></div>
+</div>
+
+<script src="jquery.js"></script>
+<script type="text/javascript" src="pagePiling.js-master/jquery.pagepiling.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('#pagepiling').pagepiling({
+		direction: 'vertical',    /* vertical/horizontal */
+		navigation: {
+            'textColor': '#fff',
+            'bulletsColor': '#fff',
+            'position': 'right',
+            'tooltips': ['Harry Potter', 'Avengers', 'Doctor Strange', 'Iron Man']
+        }
+	});
+        
+});
+</script>
+</body>
+</html>

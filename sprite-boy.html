@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sprite boy</title>
+	<style type="text/css">
+		body{margin: 0;padding: 0;}
+		.sprite{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);height: 137px;width: calc(920px / 8);background: url('sprite-boy.png');animation: anime 1s steps(8) infinite;}
+		.sprite:hover{animation: anime .5s steps(8) infinite;}
+		@keyframes anime
+		{
+			from{background-position: 0;}
+			to{background-position: 920px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="sprite"></div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<title></title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<style type="text/css">
+		*{margin: 0;padding: 0;font-family: sans-serif;}
+		body{background: linear-gradient(#9c88ff, #7f8fa6, #10ac84, #1dd1a1);min-height: 100vh;}
+		.swiper-container {
+      width: 300px;
+      height: 380px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -150px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      background: #f2f2f2;
+    }
+    .swiper-container .swiper-slide .imgBx {position: absolute;width: 300px;height: 300px;}
+    .swiper-container .swiper-slide .imgBx img {position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;}
+
+    .swiper-container .swiper-slide .content {position: absolute;bottom: 0;height: 80px;width: 100%;background: #fff;text-align: center;display: flex;justify-content: center;align-items: center;}
+    .swiper-container .swiper-slide .content h2 {font-size: 20px;}
+    .swiper-container .swiper-slide .content span {font-size: 16px;color: #f44336;}
+	</style>
+</head>
+<body>
+<!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<div class="imgBx">
+      		<img src="Thor-and-Stormbreaker.webp">
+      	</div>
+      	<div class="content">
+      		<h2>Thor <br><span>God Of Thunder</span></h2>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="imgBx">
+      		<img src="Avengers254d1158022f16-2040.0.0.jpg">
+      	</div>
+      	<div class="content">
+      		<h2>Steve Rogers <br><span>Camptain America</span></h2>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="imgBx">
+      		<img src="https___blogs-images.forbes.com_scottmendelson_files_2018_12_Captain-Marvel-Poster-B-1200x675.jpg">
+      	</div>
+      	<div class="content">
+      		<h2>Caraline <br><span>Camptain Marvel</span></h2>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="imgBx">
+      		<img src="thanos_marvel_feature.jpg">
+      	</div>
+      	<div class="content">
+      		<h2>Thanos <br><span>Destroyer</span></h2>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="imgBx">
+      		<img src="95e386d823b762b40026785be93b8170.jpg">
+      	</div>
+      	<div class="content">
+      		<h2>Tony Stark <br><span>Iron Man</span></h2>
+      	</div>
+      </div>
+    </div><!-- end of swiper-wrapper -->
+  </div><!-- end of swiper-container -->
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      }
+  });
+</script>
+</body>
+</html>

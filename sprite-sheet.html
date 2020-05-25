@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sprite girl</title>
+</head>
+<style type="text/css">
+	body{margin: 0;padding: 0;}
+	.box{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);height: 256px;width: calc(1536px / 6);background: url('sprite-girl.png');animation: animate 1s steps(6) infinite;}
+	.box:hover{animation: animate .5s steps(6) infinite;}
+	@keyframes animate
+	{
+		from{background-position: 0;}
+		to{background-position: 1536px;}
+	}
+</style>
+<body>
+	<div class="box"></div>
+</body>
+</html>

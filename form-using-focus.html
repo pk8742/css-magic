@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form using focus</title>
+</head>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700,700i');
+	*{margin: 0;padding: 0;}
+	body{margin: 0;padding: 0;background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/itCjTBE/dark-blue-abstract-technology-low-poly-communication-motion-design-video-animation-ultra-hd-4k-3840x2160_siz5vhg4ql_thumbnail-full01.png);background-size: cover;}
+	.login{top: 50%;left: 35%;position: absolute;transform: translate(-50%,-50%);height:350px;width: 280px;background: #fff;padding: 10px;}
+	.login h1{color: #262626;font-family: 'Ubuntu', cursive;font-size: 35px;text-align: center;margin-top: 20px;}
+	.login form{outline: none;margin-top: 50px;}
+	.login input[type='text'],.login input[type='password']{position: relative;width: 250px;height: 40px;font-family: 'Ubuntu', cursive;margin: 5px;padding-left: 5px;font-size: 20px;border: 1px solid #262626;}
+	.login span{position: relative;top: -32px;left: 12px;font-family: 'Ubuntu', cursive;display: block;width: 90px;background: #fff;text-align: center;transition: .5s;}
+	.login input[type='button']{margin: 5px;width: 250px;height: 50px;line-height: 15px;background: #40739e;font-family: 'Ubuntu', cursive;font-size: 24px;color: #fff;}
+
+	.login input:focus ~ span{top: -55px;font-size: 14px;}
+	.login input:focus ~ input[type='text'],.login input:valid ~ input[type='text']{
+		border: 2px solid #262626;border-radius: 15px;outline: none;
+	}
+</style>
+<body>
+	<div class="login">
+		<h1>Sign In</h1>
+		<form>
+			<input type="text" name="email"><span>Enter Email</span>
+			<input type="password" name="pass"><span>Password</span>
+			
+			<input type="button" name="submit" value="Sign In">
+
+		</form>
+	</div>
+</body>
+</html>
